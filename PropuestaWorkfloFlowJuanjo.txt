@@ -1,0 +1,25 @@
+Propuesta 1:
+
+Partimos de la rama xusa
+git checkout master -> Te vas a master 
+git pull -> Lo actualizas de GitHub por si ha habido algún cambio (No habrá conflictos porque tu has trabajado en tu rama)
+git merge xusa -> Mergeas tu rama en master. (Solucionas "conflictos" si los hay)
+git push -> Subes otra vez master actualizada GitHub con tus cambios.
+y otra vez ...
+git checkout xusa -> Para seguir cambiando cosas
+git merge master -> Actualizamos desde master.
+git push -> Actualizamos xusa en origen.
+
+
+Propuesta 2:
+
+Partimos de la rama juanjo
+git fetch origin -> Actualizamos los cambios en la copia de origen en local.
+git merge origin/master -> Mergeamos los cambios en origin/master con el trabajo en mi rama.
+git push -> Actualizo la rama juanjo en GitHub
+
+Ahora para evitar el Pull Request...
+git checkout master -> Te vas a master.
+git merge origin/master -> Mergeamos los cambios en master con origin/master. Se puede hacer tb git pull
+git push -> Actualizamos master en origen.
+git checkout juanjo -> Para seguir cambiando cosas
